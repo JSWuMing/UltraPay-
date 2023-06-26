@@ -7,7 +7,6 @@ import com.alipay.api.internal.util.AlipayLogger
 import com.egzosn.pay.wx.api.WxPayConfigStorage
 import com.egzosn.pay.wx.api.WxPayService
 import org.bukkit.Bukkit
-import org.fastmcmirror.ultrapay.gui.PayGUI
 import taboolib.common.platform.Plugin
 import taboolib.platform.util.bukkitPlugin
 
@@ -33,7 +32,6 @@ object UltraPay : Plugin() {
                     "──────────────────────────────\n" +
                     "Powered By TabooLib 6.0\n"
         )
-        Bukkit.getPluginManager().registerEvents(PayGUI(), bukkitInstance)
         wxPayService = WxPayService(getWxConfig())
         aliPayService = getAliConfig()
     }
