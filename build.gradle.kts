@@ -4,7 +4,7 @@ import java.util.jar.JarFile
 plugins {
     `java-library`
     `maven-publish`
-    id("io.izzel.taboolib") version "1.55"
+    id("io.izzel.taboolib") version "1.56"
     id("org.jetbrains.kotlin.jvm") version "1.6.10"
 }
 
