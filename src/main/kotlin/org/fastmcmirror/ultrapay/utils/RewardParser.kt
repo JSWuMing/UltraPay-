@@ -17,7 +17,7 @@ class RewardParser {
                                 .substring(10)
                                 .replace("%price%", orderInfo.price.toString())
                                 .replace(
-                                    "%point%", (orderInfo.price * UltraPay.bukkitInstance.config.getInt("point"))
+                                    "%point%", (orderInfo.price * UltraPay.bukkitInstance.config.getInt("type.points.proportion"))
                                         .toInt().toString()
                                 )
                                 .replace("%player%", orderInfo.player.name).color()
@@ -28,7 +28,7 @@ class RewardParser {
                                 .substring(10)
                                 .replace("%price%", orderInfo.price.toString())
                                 .replace(
-                                    "%point%", (orderInfo.price * UltraPay.bukkitInstance.config.getInt("point"))
+                                    "%point%", (orderInfo.price * UltraPay.bukkitInstance.config.getInt("type.points.proportion"))
                                         .toInt().toString()
                                 )
                                 .replace("%player%", orderInfo.player.name).color()
@@ -40,7 +40,7 @@ class RewardParser {
                                     .substring(12)
                                     .replace("%price%", orderInfo.price.toString())
                                     .replace(
-                                        "%point%", (orderInfo.price * UltraPay.bukkitInstance.config.getInt("point"))
+                                        "%point%", (orderInfo.price * UltraPay.bukkitInstance.config.getInt("type.points.proportion"))
                                             .toInt().toString()
                                     )
                                     .replace("%player%", orderInfo.player.name).color()
@@ -51,13 +51,13 @@ class RewardParser {
                         orderInfo.player.sendTitle(
                             args[0].replace("%price%", orderInfo.price.toString())
                                 .replace(
-                                    "%point%", (orderInfo.price * UltraPay.bukkitInstance.config.getInt("point"))
+                                    "%point%", (orderInfo.price * UltraPay.bukkitInstance.config.getInt("type.points.proportion"))
                                         .toInt().toString()
                                 )
                                 .replace("%player%", orderInfo.player.name).color(),
                             args[1].replace("%price%", orderInfo.price.toString())
                                 .replace(
-                                    "%point%", (orderInfo.price * UltraPay.bukkitInstance.config.getInt("point"))
+                                    "%point%", (orderInfo.price * UltraPay.bukkitInstance.config.getInt("type.points.proportion"))
                                         .toInt().toString()
                                 )
                                 .replace("%player%", orderInfo.player.name).color(),
